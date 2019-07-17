@@ -1,0 +1,20 @@
+{{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+{{else}}
+{{/each}}
+
+<div class="card card-body">
+    <h3>Edit Dozzier</h3>
+    <form action="/dossiers/{{dossier.id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT"> <!--for method override -->
+        <div class="form-group">
+            <label for="title">Title of Dozzier</label>
+            <input type="text" class="form-control" value="{{dossier.title}}" name='title' required>
+        </div>
+        <div class="form-group">
+            <label for="details">Details about day</label>
+            <textarea name="details" class="form-control"  required>{{dossier.details}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
