@@ -1,12 +1,12 @@
 {
-  "name": "vidjot",
+  "name": "Daily dossier",
   "version": "1.0.0",
-  "description": "Project for storing ideas",
+  "description": "Project for storing dossiers",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Sachin Bhandari",
+  "author": "Rohit Sharma",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
